@@ -1,0 +1,11 @@
+*.jar
+.idea/*
+**/test
+*.class
+*.iml
+**/out/*
+
+*/target/*
+target/
+*/test/*
+META-INF/
