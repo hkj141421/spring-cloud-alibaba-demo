@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: dubbo-service-provider
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:38080
+        password: nacos
+        username: nacos
+        file-extension: yaml
+      discovery:
+        server-addr: localhost:38080

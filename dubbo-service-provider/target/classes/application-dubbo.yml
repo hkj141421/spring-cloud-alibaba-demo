@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: localhost:38080
+dubbo:
+  application:
+    name: dubbo-service-provider
+  protocol:
+    name: dubbo
+    port: 28080
+  registry:
+    protocol: nacos
+    address: spring-cloud://localhost
+  cloud:
+    subscribed-services: dubbo-service-provider,dubbo-service-sonsumer
+server:
+  port: 18080
+env: dubbo
